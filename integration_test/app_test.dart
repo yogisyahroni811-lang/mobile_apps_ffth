@@ -10,11 +10,15 @@ void main() {
       app.main();
       await tester.pumpAndSettle();
 
-      // Find the title
-      expect(find.text('New Ticket'), findsOneWidget);
+      // Find the main app title
+      expect(find.text('Field Technician App'), findsOneWidget);
 
-      // Find the main prompt
-      expect(find.text('What action is being performed?'), findsOneWidget);
+      // Find the button to the New Ticket screen
+      expect(find.text('New Ticket (Wizard)'), findsOneWidget);
+
+      // Verify other menu items exist
+      expect(find.text('Smart Ticket'), findsOneWidget);
+      expect(find.text('Work Completion Report'), findsOneWidget);
     });
   });
 }
