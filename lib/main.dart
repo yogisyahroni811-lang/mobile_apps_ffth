@@ -21,25 +21,25 @@ class MyApp extends StatelessWidget {
       title: 'Field Technician App',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode:
-          ThemeMode.system, // Automatically switch based on system settings
+      themeMode: ThemeMode.system,
       home: const HomeScreen(),
     );
   }
 }
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Field Technician App Home'),
+        title: const Text('Field Technician App'),
       ),
       body: ListView(
         children: [
-          _buildScreenButton(context, 'New Ticket', const NewTicketScreen()),
+          _buildScreenButton(
+              context, 'New Ticket (Wizard)', const NewTicketScreen()),
           _buildScreenButton(context, 'Work Completion Report',
               const WorkCompletionReportScreen()),
           _buildScreenButton(
@@ -60,6 +60,7 @@ class HomeScreen extends StatelessWidget {
   Widget _buildScreenButton(BuildContext context, String title, Widget screen) {
     return ListTile(
       title: Text(title),
+      trailing: const Icon(Icons.chevron_right),
       onTap: () {
         Navigator.push(
           context,

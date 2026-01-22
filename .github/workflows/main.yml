@@ -1,0 +1,48 @@
+name: Flutter CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - 'feature-*'
+      - 'feat-*'
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Verify formatting
+        run: dart format --output=none --set-exit-if-changed .
+
+      - name: Analyze project source
+        run: flutter analyze
+
+      - name: Run unit tests
+        run: flutter test
+
+      # Integration tests require an emulator or connected device.
+      # To enable this in GitHub Actions, you can use reactivecircus/android-emulator-runner
+      # - name: Run integration tests
+      #   uses: reactivecircus/android-emulator-runner@v2
+      #   with:
+      #     api-level: 29
+      #     script: flutter test integration_test/app_test.dart
+
+      - name: Build APK (Release)
+        run: flutter build apk --release
