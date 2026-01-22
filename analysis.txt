@@ -1,0 +1,96 @@
+Analyzing mobile_apps_ffth...                                   
+
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\asset_migration_screen.dart:129:43 - deprecated_member_use
+warning - Dead code - lib\field_service_app\layar\network_diagnosis_screen.dart:77:60 - dead_code
+warning - Dead code - lib\field_service_app\layar\network_diagnosis_screen.dart:78:65 - dead_code
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\network_diagnosis_screen.dart:120:86 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_audit_screen.dart:25:27 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_audit_screen.dart:27:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_audit_screen.dart:130:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_audit_screen.dart:182:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_audit_screen.dart:227:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_audit_screen.dart:288:64 - deprecated_member_use
+warning - The value of the local variable 'surfaceColor' isn't used - lib\field_service_app\layar\odp_bulk_swap_screen.dart:66:11 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_bulk_swap_screen.dart:156:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_bulk_swap_screen.dart:157:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_bulk_swap_screen.dart:160:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\odp_bulk_swap_screen.dart:164:45 - deprecated_member_use
+  error - The property 'currentContext' can't be unconditionally accessed because the receiver can be 'null' - lib\field_service_app\layar\odp_bulk_swap_screen.dart:230:33 - unchecked_use_of_nullable_value
+  error - The property 'currentContext' can't be unconditionally accessed because the receiver can be 'null' - lib\field_service_app\layar\odp_bulk_swap_screen.dart:231:33 - unchecked_use_of_nullable_value
+warning - This default clause is covered by the previous cases - lib\field_service_app\layar\splicing_matrix_screen.dart:20:5 - unreachable_switch_default
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\splicing_matrix_screen.dart:142:47 - deprecated_member_use
+  error - The property 'currentContext' can't be unconditionally accessed because the receiver can be 'null' - lib\field_service_app\layar\splicing_matrix_screen.dart:182:33 - unchecked_use_of_nullable_value
+  error - The property 'currentContext' can't be unconditionally accessed because the receiver can be 'null' - lib\field_service_app\layar\splicing_matrix_screen.dart:183:33 - unchecked_use_of_nullable_value
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\field_service_app\layar\splicing_matrix_screen.dart:194:49 - deprecated_member_use
+  error - Target of URI doesn't exist: 'package:field_technician_app/field_service_app/layar/home_screen.dart' - lib\field_service_app\main.dart:3:8 - uri_does_not_exist
+  error - The name 'HomeScreen' isn't a class - lib\field_service_app\main.dart:26:33 - creation_with_non_type
+  error - The named parameter 'getPages' isn't defined - lib\field_worker_app\app\app.dart:15:7 - undefined_named_parameter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\installer_app\screens\finalization_screen.dart:162:42 - deprecated_member_use
+  error - The getter 'podium' isn't defined for the type 'Icons' - lib\installer_app\screens\path_mapping_screen.dart:171:46 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\installer_app\screens\technical_validation_screen.dart:89:77 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\installer_app\screens\technical_validation_screen.dart:147:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\installer_app\screens\technical_validation_screen.dart:149:74 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\dismantle_checklist\dismantle_checklist_screen_1.dart:374:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\dismantle_checklist\dismantle_checklist_screen_2.dart:251:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\hardware_swap\hardware_swap_screen.dart:104:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\incident_mapping\incident_mapping_screen.dart:75:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\incident_mapping\incident_mapping_screen.dart:133:29 - deprecated_member_use
+  error - Target of URI doesn't exist: 'package:field_technician_app/field_service_app/layar/hardware_swap/hardware_swap_screen.dart' - lib\layar\new_ticket\new_ticket_screen.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'package:field_technician_app/field_service_app/layar/path_overwrite/path_overwrite_screen.dart' - lib\layar\new_ticket\new_ticket_screen.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'package:field_technician_app/field_service_app/layar/dismantle_checklist/dismantle_checklist_screen_1.dart' - lib\layar\new_ticket\new_ticket_screen.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'package:field_technician_app/field_service_app/layar/incident_mapping/incident_mapping_screen.dart' - lib\layar\new_ticket\new_ticket_screen.dart:5:8 - uri_does_not_exist
+  error - The name 'HardwareSwapScreen' isn't a class - lib\layar\new_ticket\new_ticket_screen.dart:44:93 - creation_with_non_type
+  error - The name 'PathOverwriteScreen' isn't a class - lib\layar\new_ticket\new_ticket_screen.dart:53:93 - creation_with_non_type
+  error - The getter 'move_location' isn't defined for the type 'Icons' - lib\layar\new_ticket\new_ticket_screen.dart:58:33 - undefined_getter
+  error - The name 'DismantleChecklistScreen1' isn't a class - lib\layar\new_ticket\new_ticket_screen.dart:62:93 - creation_with_non_type
+  error - The getter 'signal_disconnected' isn't defined for the type 'Icons' - lib\layar\new_ticket\new_ticket_screen.dart:67:33 - undefined_getter
+  error - The name 'IncidentMappingScreen' isn't a class - lib\layar\new_ticket\new_ticket_screen.dart:71:93 - creation_with_non_type
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\path_overwrite\path_overwrite_screen.dart:61:27 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\path_overwrite\path_overwrite_screen.dart:128:27 - deprecated_member_use
+  error - A value of type 'List<Ticket> (where Ticket is defined in e:\antigraviti google\mobile_apps_ffth\lib\data\models\ticket.dart)' can't be assigned to a variable of type 'List<Ticket> (where Ticket is defined in e:\antigraviti google\mobile_apps_ffth\lib\data\models\ticket_model.dart)' - lib\layar\screens\inbox_screen.dart:19:16 - invalid_assignment
+warning - Dead code - lib\layar\screens\inbox_screen.dart:26:68 - dead_code
+warning - Dead code - lib\layar\screens\inbox_screen.dart:27:65 - dead_code
+warning - Dead code - lib\layar\screens\inbox_screen.dart:28:57 - dead_code
+  error - The method 'TicketListItem' isn't defined for the type '_InboxScreenState' - lib\layar\screens\inbox_screen.dart:66:24 - undefined_method
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\screens\inbox_screen.dart:79:39 - deprecated_member_use
+warning - Dead code - lib\layar\screens\inbox_screen.dart:125:65 - dead_code
+warning - Dead code - lib\layar\screens\inbox_screen.dart:128:85 - dead_code
+warning - Dead code - lib\layar\screens\inbox_screen.dart:134:59 - dead_code
+warning - Dead code - lib\layar\screens\inbox_screen.dart:147:65 - dead_code
+warning - Dead code - lib\layar\screens\inbox_screen.dart:148:64 - dead_code
+warning - Dead code - lib\layar\screens\nms_diagnostic_screen.dart:9:68 - dead_code
+warning - Dead code - lib\layar\screens\nms_diagnostic_screen.dart:10:62 - dead_code
+warning - Dead code - lib\layar\screens\nms_diagnostic_screen.dart:11:57 - dead_code
+warning - The value of the local variable 'subtextColor' isn't used - lib\layar\screens\nms_diagnostic_screen.dart:12:17 - unused_local_variable
+warning - Dead code - lib\layar\screens\nms_diagnostic_screen.dart:12:65 - dead_code
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\screens\nms_diagnostic_screen.dart:104:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\screens\nms_diagnostic_screen.dart:110:53 - deprecated_member_use
+  error - The getter 'shade300' isn't defined for the type 'Color' - lib\layar\screens\nms_diagnostic_screen.dart:269:106 - undefined_getter
+warning - Dead code - lib\layar\screens\work_completion_screen.dart:11:42 - dead_code
+warning - Dead code - lib\layar\screens\work_completion_screen.dart:12:65 - dead_code
+warning - Dead code - lib\layar\screens\work_completion_screen.dart:14:42 - dead_code
+warning - Dead code - lib\layar\screens\work_completion_screen.dart:15:57 - dead_code
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\screens\work_completion_screen.dart:33:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\screens\work_completion_screen.dart:76:43 - deprecated_member_use
+  error - Target of URI doesn't exist: '../screens/ticket_detail_screen.dart' - lib\layar\widgets\ticket_list_item.dart:3:8 - uri_does_not_exist
+warning - This default clause is covered by the previous cases - lib\layar\widgets\ticket_list_item.dart:17:7 - unreachable_switch_default
+warning - This default clause is covered by the previous cases - lib\layar\widgets\ticket_list_item.dart:29:7 - unreachable_switch_default
+warning - Dead code - lib\layar\widgets\ticket_list_item.dart:37:71 - dead_code
+warning - Dead code - lib\layar\widgets\ticket_list_item.dart:38:57 - dead_code
+warning - Dead code - lib\layar\widgets\ticket_list_item.dart:39:65 - dead_code
+  error - The method 'TicketDetailScreen' isn't defined for the type 'TicketListItem' - lib\layar\widgets\ticket_list_item.dart:47:35 - undefined_method
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\widgets\ticket_list_item.dart:60:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\widgets\ticket_list_item.dart:84:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\layar\widgets\ticket_list_item.dart:101:40 - deprecated_member_use
+warning - Dead code - lib\layar\widgets\ticket_list_item.dart:139:62 - dead_code
+warning - Dead code - lib\layar\widgets\ticket_list_item.dart:140:74 - dead_code
+  error - Expected to find ')' - lib\layar\widgets\ticket_list_item.dart:145:6 - expected_token
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\backbone_pop_diagnostic\backbone_pop_diagnostic_screen.dart:135:49 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\backbone_pop_diagnostic\backbone_pop_diagnostic_screen.dart:233:7 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\backbone_pop_diagnostic\backbone_pop_diagnostic_screen.dart:234:7 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\olt_hardware_swap\olt_hardware_swap_screen.dart:146:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\smart_ticket\smart_ticket_screen.dart:66:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\work_completion_report\work_completion_report_screen.dart:280:37 - deprecated_member_use
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\theme.dart:32:18 - argument_type_not_assignable
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\theme.dart:75:18 - argument_type_not_assignable
+

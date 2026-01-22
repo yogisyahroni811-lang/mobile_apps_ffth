@@ -1,4 +1,4 @@
-import 'package.flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class WorkCompletionScreen extends StatelessWidget {
   const WorkCompletionScreen({Key? key}) : super(key: key);
@@ -7,9 +7,11 @@ class WorkCompletionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // Define colors based on the second screen's design
     final bool isDarkMode = true; // Assuming dark mode as per design
-    final Color backgroundColor = isDarkMode ? Color(0xFF23230F) : Color(0xFFF8F8F5);
+    final Color backgroundColor =
+        isDarkMode ? Color(0xFF23230F) : Color(0xFFF8F8F5);
     final Color surfaceColor = isDarkMode ? Color(0xFF2D2D14) : Colors.white;
-    final Color primaryColor = isDarkMode ? Color(0xFFF9F906) : Color(0xFFF9F906);
+    final Color primaryColor =
+        isDarkMode ? Color(0xFFF9F906) : Color(0xFFF9F906);
     final Color textColor = isDarkMode ? Colors.white : Colors.black;
 
     return Scaffold(
@@ -17,7 +19,9 @@ class WorkCompletionScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: backgroundColor,
         elevation: 0,
-        title: Text('Work Summary', style: TextStyle(color: textColor, fontSize: 18.0, fontWeight: FontWeight.bold)),
+        title: Text('Work Summary',
+            style: TextStyle(
+                color: textColor, fontSize: 18.0, fontWeight: FontWeight.bold)),
         centerTitle: true,
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios_new, color: textColor),
@@ -34,7 +38,8 @@ class WorkCompletionScreen extends StatelessWidget {
               children: [
                 Icon(Icons.sync, color: primaryColor, size: 18),
                 const SizedBox(width: 8),
-                Text('Syncing to Dashboard...', style: TextStyle(color: textColor, fontSize: 12)),
+                Text('Syncing to Dashboard...',
+                    style: TextStyle(color: textColor, fontSize: 12)),
               ],
             ),
           ),
@@ -76,9 +81,11 @@ class WorkCompletionScreen extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Task Completed', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+              const Text('Task Completed',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
               const SizedBox(height: 4),
-              Text('04:15 PM • Oct 24, 2023', style: TextStyle(color: Colors.grey[400], fontSize: 12)),
+              Text('04:15 PM • Oct 24, 2023',
+                  style: TextStyle(color: Colors.grey[400], fontSize: 12)),
             ],
           )
         ],
@@ -90,18 +97,23 @@ class WorkCompletionScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('  Activity Summary', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        const Text('  Activity Summary',
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
         const SizedBox(height: 12),
-        _buildActivityItem(surfaceColor, 'Fiber Splicing', 'Main distribution point', Icons.timeline, '144 Cores'),
+        _buildActivityItem(surfaceColor, 'Fiber Splicing',
+            'Main distribution point', Icons.timeline, '144 Cores'),
         const SizedBox(height: 12),
-        _buildActivityItem(surfaceColor, 'Equipment Swap', 'Serial #X892-BB', Icons.router, 'ONT Device'),
+        _buildActivityItem(surfaceColor, 'Equipment Swap', 'Serial #X892-BB',
+            Icons.router, 'ONT Device'),
         const SizedBox(height: 12),
-        _buildActivityItem(surfaceColor, 'Cabling Used', 'Drop cable replacement', Icons.cable, '150m'),
+        _buildActivityItem(surfaceColor, 'Cabling Used',
+            'Drop cable replacement', Icons.cable, '150m'),
       ],
     );
   }
 
-  Widget _buildActivityItem(Color surfaceColor, String title, String subtitle, IconData icon, String trailing) {
+  Widget _buildActivityItem(Color surfaceColor, String title, String subtitle,
+      IconData icon, String trailing) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -119,8 +131,10 @@ class WorkCompletionScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
-                Text(subtitle, style: TextStyle(color: Colors.grey[400], fontSize: 12)),
+                Text(title,
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
+                Text(subtitle,
+                    style: TextStyle(color: Colors.grey[400], fontSize: 12)),
               ],
             ),
           ),
@@ -144,10 +158,12 @@ class WorkCompletionScreen extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text('  Evidence Photos', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Text('  Evidence Photos',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             TextButton(
               onPressed: () {},
-              child: const Text('Edit', style: TextStyle(color: Color(0xFFF9F906))),
+              child: const Text('Edit',
+                  style: TextStyle(color: Color(0xFFF9F906))),
             )
           ],
         ),
@@ -164,14 +180,16 @@ class WorkCompletionScreen extends StatelessWidget {
                   margin: const EdgeInsets.only(right: 8),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.grey[600]!, style: BorderStyle.solid),
+                    border: Border.all(
+                        color: Colors.grey[600]!, style: BorderStyle.solid),
                   ),
                   child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.add_a_photo, color: Colors.grey),
                       SizedBox(height: 4),
-                      Text('Add New', style: TextStyle(color: Colors.grey, fontSize: 12)),
+                      Text('Add New',
+                          style: TextStyle(color: Colors.grey, fontSize: 12)),
                     ],
                   ),
                 );
@@ -198,15 +216,19 @@ class WorkCompletionScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('  Notes / Findings', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+        const Text('  Notes / Findings',
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
         const SizedBox(height: 8),
         TextField(
           maxLines: 4,
           decoration: InputDecoration(
             fillColor: surfaceColor,
             filled: true,
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
-            hintText: 'Add details about the signal strength, customer interactions, or anomalies found...',
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide.none),
+            hintText:
+                'Add details about the signal strength, customer interactions, or anomalies found...',
           ),
         )
       ],
@@ -220,11 +242,13 @@ class WorkCompletionScreen extends StatelessWidget {
       child: ElevatedButton.icon(
         onPressed: () {},
         icon: const Icon(Icons.send, color: Colors.black),
-        label: const Text('Submit Report', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+        label: const Text('Submit Report',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
         style: ElevatedButton.styleFrom(
           backgroundColor: primaryColor,
           minimumSize: const Size(double.infinity, 56),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         ),
       ),
     );

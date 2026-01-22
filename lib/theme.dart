@@ -14,21 +14,22 @@ class AppTheme {
         primary: _primaryColor,
         secondary: const Color(0xFFf9f906), // Yellow accent
         surface: Colors.white,
-        background: _lightBackgroundColor,
+// background: _lightBackgroundColor, // Deprecated
         error: const Color(0xFFef4444), // Alarm color
         onPrimary: Colors.white,
         onSecondary: Colors.black,
         onSurface: Colors.black,
-        onBackground: Colors.black,
+        // onBackground: Colors.black, // Deprecated
         onError: Colors.white,
       ),
       appBarTheme: const AppBarTheme(
-        color: Colors.white,
+        backgroundColor: Colors.white,
         elevation: 1,
         iconTheme: IconThemeData(color: Colors.black),
-        titleTextStyle: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+        titleTextStyle: TextStyle(
+            color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 1,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
@@ -56,21 +57,22 @@ class AppTheme {
         primary: _primaryColor,
         secondary: const Color(0xFFf9f906), // Yellow accent
         surface: _darkSurfaceColor,
-        background: _darkBackgroundColor,
+// background: _darkBackgroundColor, // Deprecated
         error: const Color(0xFFef4444), // Alarm color
         onPrimary: Colors.white,
         onSecondary: Colors.black,
         onSurface: Colors.white,
-        onBackground: Colors.white,
+        // onBackground: Colors.white, // Deprecated
         onError: Colors.white,
       ),
       appBarTheme: AppBarTheme(
-        color: _darkSurfaceColor,
+        backgroundColor: _darkSurfaceColor,
         elevation: 1,
         iconTheme: const IconThemeData(color: Colors.white),
-        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+        titleTextStyle: const TextStyle(
+            color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 1,
         color: _darkSurfaceColor,
         shape: RoundedRectangleBorder(

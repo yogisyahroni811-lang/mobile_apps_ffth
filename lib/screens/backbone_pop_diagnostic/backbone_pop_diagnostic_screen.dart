@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../data/mock_data.dart';
-import '../../data/models/app_models.dart';
 import 'dart:ui';
 
 class BackbonePopDiagnosticScreen extends StatefulWidget {

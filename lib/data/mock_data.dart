@@ -4,7 +4,7 @@ import 'models/app_models.dart';
 class MockData {
   static final List<WorkPerformed> workPerformedItems = [
     WorkPerformed(
-      icon: Icons.move_location,
+      icon: Icons.location_on,
       title: 'Relocation',
       subtitle: 'Completed',
       iconBackgroundColor: Colors.blue.shade50,
@@ -43,15 +43,18 @@ class MockData {
 
   static final List<EvidencePhoto> evidencePhotos = [
     EvidencePhoto(
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAJF0Mk06mEhVOJ7bJEPdifYkxjOn_KlV_Tf_Q3afCZzXoivAplt09zE-Jz415j2tAn34faJ0Uao-noik-yzIPcdgrvHeGqjY-R-HOqWvGeOhbU9lO064Itw5tMRFL34iku2V1d5esElH9M4vVezyubMaL20ufiELLyKALnD_CSShI9UebB1dFAHESNv4Ec__xoQN8meGnO00BX9lmUctmsshxcYVNMySvvCvw3s_EOhhDEtClodrAVY_ev6Ubg88Y3YqjjxHjyrl4',
+      imageUrl:
+          'https://lh3.googleusercontent.com/aida-public/AB6AXuAJF0Mk06mEhVOJ7bJEPdifYkxjOn_KlV_Tf_Q3afCZzXoivAplt09zE-Jz415j2tAn34faJ0Uao-noik-yzIPcdgrvHeGqjY-R-HOqWvGeOhbU9lO064Itw5tMRFL34iku2V1d5esElH9M4vVezyubMaL20ufiELLyKALnD_CSShI9UebB1dFAHESNv4Ec__xoQN8meGnO00BX9lmUctmsshxcYVNMySvvCvw3s_EOhhDEtClodrAVY_ev6Ubg88Y3YqjjxHjyrl4',
       timestamp: '14:02',
     ),
     EvidencePhoto(
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC72RC2gwzE2R6B6q6GbC0mKNcIOXeb05MURVRR2aa0TUnPYK0YzWd-ARjcZlm2OxFlvn1n---jAszfbtyaHlujUnhx93Znh1yxmreNgQzYY2OBNM3Y-JI2lSJvTZWck-D7KMVI9jXayRUNCyYs95U8zCiqmhoLqB0U5phOi2o8vq9poras9e4jUMKGHyGzmzAT4CeKDM4tcn74cDNA-eLzp23ulVI0wm8OqSxDD0_9KkcAuJrN2UWKpZ5IiMDbAjseaSjKEGEaq0o',
+      imageUrl:
+          'https://lh3.googleusercontent.com/aida-public/AB6AXuC72RC2gwzE2R6B6q6GbC0mKNcIOXeb05MURVRR2aa0TUnPYK0YzWd-ARjcZlm2OxFlvn1n---jAszfbtyaHlujUnhx93Znh1yxmreNgQzYY2OBNM3Y-JI2lSJvTZWck-D7KMVI9jXayRUNCyYs95U8zCiqmhoLqB0U5phOi2o8vq9poras9e4jUMKGHyGzmzAT4CeKDM4tcn74cDNA-eLzp23ulVI0wm8OqSxDD0_9KkcAuJrN2UWKpZ5IiMDbAjseaSjKEGEaq0o',
       timestamp: '14:15',
     ),
     EvidencePhoto(
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBJSncM3QTn9R0VlhlUBHWc7jptWU3hiLsIvmBdAo9THPA26k33C_34s__ZZNa2iF-U9mBOeh03LX79biwj8s10wIUB0mf9sQjHAeSZErHDOJjowJG0OlGXkflejyRrk0hpmCvqDNDkI-18MBNF-v4XwIDE_ss2GOK66Y13vzuAcZNIcQbjLBrzHaQIfFhZgYOP4T-PBoLrupzOnm0Dzk0PFymGE6Elkesrcz1exAo0Euh1hftoZ1ZYUrXUm6aS1Q00-YrgGWpa8Qs',
+      imageUrl:
+          'https://lh3.googleusercontent.com/aida-public/AB6AXuBJSncM3QTn9R0VlhlUBHWc7jptWU3hiLsIvmBdAo9THPA26k33C_34s__ZZNa2iF-U9mBOeh03LX79biwj8s10wIUB0mf9sQjHAeSZErHDOJjowJG0OlGXkflejyRrk0hpmCvqDNDkI-18MBNF-v4XwIDE_ss2GOK66Y13vzuAcZNIcQbjLBrzHaQIfFhZgYOP4T-PBoLrupzOnm0Dzk0PFymGE6Elkesrcz1exAo0Euh1hftoZ1ZYUrXUm6aS1Q00-YrgGWpa8Qs',
       timestamp: '14:22',
     ),
   ];
@@ -101,9 +104,16 @@ class MockData {
   ];
 
   static final List<NmsStatusItem> nmsStatusItems = [
-    NmsStatusItem(property: 'Interface', value: 'GigabitEthernet0/0/4', color: Colors.white),
+    NmsStatusItem(
+        property: 'Interface',
+        value: 'GigabitEthernet0/0/4',
+        color: Colors.white),
     NmsStatusItem(property: 'Admin State', value: 'UP', color: Colors.green),
-    NmsStatusItem(property: 'Line Protocol', value: 'DOWN', color: Colors.red, isBold: true),
+    NmsStatusItem(
+        property: 'Line Protocol',
+        value: 'DOWN',
+        color: Colors.red,
+        isBold: true),
   ];
 
   static final PowerSourceStatus powerSourceStatus = PowerSourceStatus(
@@ -111,7 +121,8 @@ class MockData {
     upsStatus: 'Running on Battery',
   );
 
-  static final EnvironmentalChassisStatus environmentalChassisStatus = EnvironmentalChassisStatus(
+  static final EnvironmentalChassisStatus environmentalChassisStatus =
+      EnvironmentalChassisStatus(
     coolingStatus: 'OK',
     chassisStatus: 'DOWN',
   );
@@ -122,10 +133,12 @@ class MockData {
     lastUpdate: '10m ago',
     symptom: '50 Users Offline',
     area: 'Sector 4 North',
-    systemLog: 'CMD: diag --last-alarm --node ODC-01\n\n[CRITICAL] Alarm ID: #9921\nType: Dying Gasp (Power Loss)\nNode: ODC-01 Cabinet\nTimestamp: 14:02 UTC\n\n>> Recommendation: Check power supply unit.',
+    systemLog:
+        'CMD: diag --last-alarm --node ODC-01\n\n[CRITICAL] Alarm ID: #9921\nType: Dying Gasp (Power Loss)\nNode: ODC-01 Cabinet\nTimestamp: 14:02 UTC\n\n>> Recommendation: Check power supply unit.',
     targetLocation: 'ODC-01 Cabinet',
     targetAddress: '42 Industrial Pkwy, Tech District',
-    mapImageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAxaZvrusrtlmBXcXR8yFfbVkqR7u5Lk407oVF6DIZY_eULkn4Mfl06jTeTOUDymrH4iZlLxNFR4ZPjQq1DkMWU9nIXRPRIR4FQdSlTJakY1XKmdau3DiCXMsMW1Q1aVZIjYEAnq4rZkdLxbSCWxKtllEadwTazPjZ-5wRgkBfzXqZRMk6Pftfoeke9pkHiLqgfk07WlygB5wgbC-QY3lh1MEodStzOLzKe4rC9jggFeuelbab-xg80AdBEsD9HGbRELu5iV-F34o0',
+    mapImageUrl:
+        'https://lh3.googleusercontent.com/aida-public/AB6AXuAxaZvrusrtlmBXcXR8yFfbVkqR7u5Lk407oVF6DIZY_eULkn4Mfl06jTeTOUDymrH4iZlLxNFR4ZPjQq1DkMWU9nIXRPRIR4FQdSlTJakY1XKmdau3DiCXMsMW1Q1aVZIjYEAnq4rZkdLxbSCWxKtllEadwTazPjZ-5wRgkBfzXqZRMk6Pftfoeke9pkHiLqgfk07WlygB5wgbC-QY3lh1MEodStzOLzKe4rC9jggFeuelbab-xg80AdBEsD9HGbRELu5iV-F34o0',
   );
 
   static final OtdrData otdrData = OtdrData(
@@ -133,8 +146,11 @@ class MockData {
     distance: 4.560,
     estimatedLocation: 'Jl. Sudirman No. 12',
     estimatedAddress: 'Near Central Business District',
-    mapImageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBcaqsMo032Ifi7elfjPQQGFnvKDxFO47f7NuTJdvcutPC8tRlPdo6fFwBGJS0wm-0EzySOevD1f-tJWGOUTYrssclArH5hyVBqZ1gGbVyICGw01vpgUhyDiBRhnnfpK_e9WDh5agBWKenLJHtf2EXhDVXrXWub8bdCiTkd2N2y3VtH49KzkZ8pTJdOUbnw_cutG8FXzxAWmhW7BscP4cQsCq-J8I1-lqbYnLbJDjMeok6TzXXHx0PtzlZEvW2qMtH9q26Tg7tD5gU',
+    mapImageUrl:
+        'https://lh3.googleusercontent.com/aida-public/AB6AXuBcaqsMo032Ifi7elfjPQQGFnvKDxFO47f7NuTJdvcutPC8tRlPdo6fFwBGJS0wm-0EzySOevD1f-tJWGOUTYrssclArH5hyVBqZ1gGbVyICGw01vpgUhyDiBRhnnfpK_e9WDh5agBWKenLJHtf2EXhDVXrXWub8bdCiTkd2N2y3VtH49KzkZ8pTJdOUbnw_cutG8FXzxAWmhW7BscP4cQsCq-J8I1-lqbYnLbJDjMeok6TzXXHx0PtzlZEvW2qMtH9q26Tg7tD5gU',
     gpsCoordinates: '-6.2088, 106.8456',
-    evidencePhotos: ['https://lh3.googleusercontent.com/aida-public/AB6AXuBhwOTNYLpmrUZQXpYOoBEgm1SZotZw6-elLfN0rgrWhl9KNK8iH8_TnXnEcUOirqjKHbGN5S4eyBKZUdruX_o_C0G5tquysBqbvdcs1pUe4H5OCTB6O0uBXnH4wK-usisnJ9BDPEen6MP2DW6voUq3TkCOwP16IQg3i6YvfvbntO_KHe4iK1RKvpQrwS0wlgJOwuX1sJwR6JiNvtECpMxvopomL-h5XgBrq0I-vv2-CrtufZUE_1eiGs1GEUctBPofCWgqp0XGAHc'],
+    evidencePhotos: [
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBhwOTNYLpmrUZQXpYOoBEgm1SZotZw6-elLfN0rgrWhl9KNK8iH8_TnXnEcUOirqjKHbGN5S4eyBKZUdruX_o_C0G5tquysBqbvdcs1pUe4H5OCTB6O0uBXnH4wK-usisnJ9BDPEen6MP2DW6voUq3TkCOwP16IQg3i6YvfvbntO_KHe4iK1RKvpQrwS0wlgJOwuX1sJwR6JiNvtECpMxvopomL-h5XgBrq0I-vv2-CrtufZUE_1eiGs1GEUctBPofCWgqp0XGAHc'
+    ],
   );
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:field_service_app/layar/hardware_swap/hardware_swap_screen.dart';
-import 'package:field_service_app/layar/path_overwrite/path_overwrite_screen.dart';
-import 'package:field_service_app/layar/dismantle_checklist/dismantle_checklist_screen_1.dart';
-import 'package:field_service_app/layar/incident_mapping/incident_mapping_screen.dart';
+import 'package:field_technician_app/layar/hardware_swap/hardware_swap_screen.dart';
+import 'package:field_technician_app/layar/path_overwrite/path_overwrite_screen.dart';
+import 'package:field_technician_app/layar/dismantle_checklist/dismantle_checklist_screen_1.dart';
+import 'package:field_technician_app/layar/incident_mapping/incident_mapping_screen.dart';
 
 class NewTicketScreen extends StatelessWidget {
   const NewTicketScreen({super.key});
@@ -41,7 +41,11 @@ class NewTicketScreen extends StatelessWidget {
                     title: 'Ganti ONT',
                     subtitle: 'Hardware replacement',
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const HardwareSwapScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const HardwareSwapScreen()));
                     },
                   ),
                   const SizedBox(height: 15),
@@ -49,26 +53,38 @@ class NewTicketScreen extends StatelessWidget {
                     icon: Icons.cable,
                     title: 'Pindah ODP / Tarik Kabel',
                     subtitle: 'Re-stringing or port move',
-                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const PathOverwriteScreen()));
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const PathOverwriteScreen()));
                     },
                   ),
                   const SizedBox(height: 15),
                   TicketTypeCard(
-                    icon: Icons.move_location,
+                    icon: Icons.location_on,
                     title: 'Pindah Rumah',
                     subtitle: 'Relocation service',
-                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const DismantleChecklistScreen1()));
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const DismantleChecklistScreen1()));
                     },
                   ),
                   const SizedBox(height: 15),
                   TicketTypeCard(
-                    icon: Icons.signal_disconnected,
+                    icon: Icons.signal_wifi_off,
                     title: 'Perbaikan LOS',
                     subtitle: 'Loss of Signal repair',
-                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const IncidentMappingScreen()));
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const IncidentMappingScreen()));
                     },
                   ),
                 ],

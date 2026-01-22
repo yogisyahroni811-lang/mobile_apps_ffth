@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../data/models/ticket_model.dart';
+import '../widgets/ticket_list_item.dart';
 import '../../data/repositories/ticket_repository.dart';
 
 class InboxScreen extends StatefulWidget {
@@ -23,7 +24,8 @@ class _InboxScreenState extends State<InboxScreen> {
   Widget build(BuildContext context) {
     // For now, let's use the dark theme as a baseline
     final bool isDarkMode = true;
-    final Color backgroundColor = isDarkMode ? Color(0xFF101922) : Color(0xFFF6F7F8);
+    final Color backgroundColor =
+        isDarkMode ? Color(0xFF101922) : Color(0xFFF6F7F8);
     final Color surfaceColor = isDarkMode ? Color(0xFF1D2936) : Colors.white;
     final Color textColor = isDarkMode ? Colors.white : Colors.black;
     final Color primaryColor = Color(0xFF137FEC);
@@ -52,7 +54,8 @@ class _InboxScreenState extends State<InboxScreen> {
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(kToolbarHeight + 20),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
             child: _buildFilterChips(),
           ),
         ),
@@ -105,7 +108,13 @@ class _InboxScreenState extends State<InboxScreen> {
 
   Widget _buildFilterChips() {
     // Mock filter data
-    final filters = ["All Tickets", "PSB", "Maintenance", "Network", "Backbone"];
+    final filters = [
+      "All Tickets",
+      "PSB",
+      "Maintenance",
+      "Network",
+      "Backbone"
+    ];
     final bool isDarkMode = true;
     final Color primaryColor = Color(0xFF137FEC);
 
@@ -125,7 +134,9 @@ class _InboxScreenState extends State<InboxScreen> {
               backgroundColor: isDarkMode ? Color(0xFF1D2936) : Colors.white,
               selectedColor: primaryColor,
               labelStyle: TextStyle(
-                color: isSelected ? Colors.white : (isDarkMode ? Colors.grey[300] : Colors.grey[600]),
+                color: isSelected
+                    ? Colors.white
+                    : (isDarkMode ? Colors.grey[300] : Colors.grey[600]),
                 fontWeight: FontWeight.w600,
                 fontSize: 14,
               ),
@@ -145,7 +156,8 @@ class _InboxScreenState extends State<InboxScreen> {
   Widget _buildSearchAndSort() {
     final bool isDarkMode = true;
     final Color surfaceColor = isDarkMode ? Color(0xFF1D2936) : Colors.white;
-    final Color borderColor = isDarkMode ? Color(0xFF2A3845) : Colors.grey[300]!;
+    final Color borderColor =
+        isDarkMode ? Color(0xFF2A3845) : Colors.grey[300]!;
 
     return Padding(
       padding: const EdgeInsets.all(16.0),

@@ -1,5 +1,5 @@
 import '../providers/mock_data_provider.dart';
-import '../models/ticket.dart';
+import '../models/ticket_model.dart';
 
 class TicketRepository {
   final MockDataProvider _dataProvider;

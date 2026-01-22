@@ -328,7 +328,7 @@ class OltHardwareSwapScreen extends StatelessWidget {
         ),
         const SizedBox(height: 8.0),
         DropdownButtonFormField<String>(
-          value: items.first,
+          initialValue: items.first,
           items: items.map((String value) {
             return DropdownMenuItem<String>(
               value: value,

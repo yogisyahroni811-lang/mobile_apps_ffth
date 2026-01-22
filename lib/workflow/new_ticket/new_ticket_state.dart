@@ -1,4 +1,4 @@
-import 'package:field_technician_app/data/models/ticket.dart';
+import '../../data/models/ticket_model.dart';
 
 abstract class NewTicketState {}
 
